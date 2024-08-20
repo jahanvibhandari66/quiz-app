@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step-by-Step Quiz</title>
+    <link rel="stylesheet" href="quiz app.css">
+</head>
+<body>
+
+<div class="quiz-container">
+    <div id="welcome-screen" class="active">
+        <h2>Welcome to Simple Quiz</h2>
+        <button class="btn" onclick="startQuiz()">Start Test</button>
+    </div>
+
+    <form id="quizForm" style="display: none;">
+        <div class="quiz-question" id="question1">
+            <h3>1. What is the capital of France?</h3>
+            <label><input type="radio" name="q1" value="A"> A. Berlin</label>
+            <label><input type="radio" name="q1" value="B"> B. Madrid</label>
+            <label><input type="radio" name="q1" value="C"> C. Paris</label>
+            <label><input type="radio" name="q1" value="D"> D. Rome</label>
+            <button type="button" class="btn" onclick="nextQuestion(1)">Next</button>
+        </div>
+
+        <div class="quiz-question" id="question2">
+            <h3>2. Which planet is known as the Red Planet?</h3>
+            <label><input type="radio" name="q2" value="A"> A. Earth</label>
+            <label><input type="radio" name="q2" value="B"> B. Mars</label>
+            <label><input type="radio" name="q2" value="C"> C. Jupiter</label>
+            <label><input type="radio" name="q2" value="D"> D. Venus</label>
+            <button type="button" class="btn" onclick="nextQuestion(2)">Next</button>
+        </div>
+
+        <div class="quiz-question" id="question3">
+            <h3>3. What is the largest ocean on Earth?</h3>
+            <label><input type="radio" name="q3" value="A"> A. Atlantic Ocean</label>
+            <label><input type="radio" name="q3" value="B"> B. Indian Ocean</label>
+            <label><input type="radio" name="q3" value="C"> C. Arctic Ocean</label>
+            <label><input type="radio" name="q3" value="D"> D. Pacific Ocean</label>
+            <button type="button" class="btn" onclick="nextQuestion(3)">Next</button>
+        </div>
+
+        <div class="quiz-question" id="question4">
+            <h3>4. Who wrote 'Romeo and Juliet'?</h3>
+            <label><input type="radio" name="q4" value="A"> A. Charles Dickens</label>
+            <label><input type="radio" name="q4" value="B"> B. Jane Austen</label>
+            <label><input type="radio" name="q4" value="C"> C. William Shakespeare</label>
+            <label><input type="radio" name="q4" value="D"> D. Mark Twain</label>
+            <button type="button" class="btn" onclick="nextQuestion(4)">Next</button>
+        </div>
+
+        <div class="quiz-question" id="question5">
+            <h3>5. What is the chemical symbol for water?</h3>
+            <label><input type="radio" name="q5" value="A"> A. CO2</label>
+            <label><input type="radio" name="q5" value="B"> B. O2</label>
+            <label><input type="radio" name="q5" value="C"> C. H2O</label>
+            <label><input type="radio" name="q5" value="D"> D. NaCl</label>
+            <button type="button" class="btn" onclick="submitQuiz()">Submit</button>
+        </div>
+    </form>
+
+    <div class="result" id="result"></div>
+</div>
+
+<script src="quiz app.js"></script>
+</body>
+</html>
+
